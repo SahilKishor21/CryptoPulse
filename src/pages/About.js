@@ -3,14 +3,21 @@ import '../styles/About.css';
 
 const About = () => {
   return (
-    <div className="about-page">
-      <h1>About Us</h1>
-      <p>
-        CryptoDashboard is your ultimate platform for tracking cryptocurrencies, market trends, and portfolio performance. Our mission is to make cryptocurrency tracking easy and accessible for everyone.
-      </p>
-      <p>
-        Founded in 2025, we provide real-time updates, intuitive charts, and in-depth insights to help you make informed decisions in the ever-changing world of crypto.
-      </p>
+    <div className="about-section section-row">
+      <div className="about-content">
+        <h2>About Bitcoin</h2>
+        <p>
+        Bitcoin (BTC) is a cryptocurrency (a virtual currency) designed to act as money and a form of payment outside the control of any one person, group, or entity.
+        This removes the need for trusted third-party involvement (e.g., a mint or bank) in financial transactions.
+        </p>
+        <p>
+        Bitcoin was introduced to the public in 2008 by an anonymous developer or group of developers using the name Satoshi Nakamoto. It has since become the most well-known and largest cryptocurrency in the world. Its popularity has inspired the development of many other cryptocurrencies.
+        </p>
+        <div className="about-buttons">
+          <button className="btn-secondary">Download Tax Report</button>
+          <button className="btn-secondary">Calculate Profits</button>
+        </div>
+      </div>
     </div>
   );
 };

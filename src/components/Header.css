@@ -1,6 +1,5 @@
-/* General Header Styles */
 .header {
-    background-color: #1e1e2f; /* Dark theme background */
+    background-color: #1e1e2f; 
     color: #ffffff;
     padding: 15px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -16,22 +15,19 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-  
-  /* Logo Styling */
   .header .logo h1 {
     font-size: 24px;
     font-weight: bold;
     margin: 0;
-    color: #ffdd59; /* Highlighted logo color */
+    color: #ffdd59; 
     cursor: pointer;
   }
   
   .header .logo h1:hover {
-    color: #ffc300; /* Slight hover effect */
+    color: #ffc300; 
     transition: color 0.3s ease;
   }
   
-  /* Navigation Menu */
   .header .nav {
     display: flex;
     gap: 15px;
@@ -50,18 +46,16 @@
   }
   
   .header .nav button:hover {
-    background-color: #33334d; /* Hover background effect */
-    transform: scale(1.05); /* Slight scale effect */
+    background-color: #33334d; 
+    transform: scale(1.05); 
   }
-  
-  /* Active Link Styling */
+
   .header .nav button.active {
-    background-color: #3a3a5e; /* Active button background */
+    background-color: #3a3a5e; 
     border: 1px solid #ffffff;
     font-weight: 600;
   }
   
-  /* Mobile Responsiveness */
   @media (max-width: 768px) {
     .header .container {
       flex-direction: column;

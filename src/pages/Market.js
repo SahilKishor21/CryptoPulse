@@ -3,26 +3,23 @@ import '../styles/Market.css';
 
 const Market = () => {
   return (
-    <div className="market-page">
-      <h1>Market Overview</h1>
-      <p>
-        Get the latest updates on cryptocurrency prices, trends, and market capitalization. Stay ahead of the market with our real-time data.
-      </p>
-      <div className="market-info">
-        <div className="market-card">
-          <h3>Bitcoin (BTC)</h3>
-          <p>Price: $68,000</p>
-          <p>24H Change: +3.5%</p>
-        </div>
-        <div className="market-card">
-          <h3>Ethereum (ETH)</h3>
-          <p>Price: $4,800</p>
-          <p>24H Change: +2.1%</p>
-        </div>
-        <div className="market-card">
-          <h3>Cardano (ADA)</h3>
-          <p>Price: $2.30</p>
-          <p>24H Change: -1.2%</p>
+    <div className="market-section section-row">
+      <div className="market-content">
+        <h2>Market Insights</h2>
+        <p>Stay updated with the latest market performance and trends in the cryptocurrency space.</p>
+        <div className="market-data">
+          <div className="market-card">
+            <h3>BTC/USD</h3>
+            <p>$34,925</p>
+          </div>
+          <div className="portfolio-card">
+            <h3>ETH/USD</h3>
+            <p>$2,547</p>
+          </div>
+          <div className="third-card">
+            <h3>BNB/USD</h3>
+            <p>$356</p>
+          </div>
         </div>
       </div>
     </div>

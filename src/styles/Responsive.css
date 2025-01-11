@@ -1,4 +1,3 @@
-/* General mobile adjustments */
 @media (max-width: 768px) {
     .price-card, .trending-coins, .carousel {
       padding: 15px;
@@ -22,7 +21,6 @@
     }
   }
   
-  /* Small screen adjustments */
   @media (max-width: 480px) {
     .price-card p, .trending-coins p {
       font-size: 12px;

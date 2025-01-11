@@ -1,19 +1,63 @@
-.about-page {
+.about-section {
+    width: 100%;
+    background-color: #f9f9f9; 
     padding: 20px;
-    text-align: center;
+    box-sizing: border-box; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .about-page h1 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 20px;
+  .about-content {
+    max-width: 1200px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .about-content h2 {
+    font-size: 24px;
     color: #333;
+    margin-bottom: 10px;
   }
   
-  .about-page p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 15px;
+  .about-content p {
+    font-size: 16px;
     color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
   }
   
+  .about-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn-primary {
+    background-color: #4caf50; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-secondary {
+    background-color: #0056b3; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #0056b0;
+  }

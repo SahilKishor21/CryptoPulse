@@ -1,45 +1,65 @@
-.portfolio-page {
+.portfolio-section {
+    width: 100%;
+    background-color: #f9fafb; 
     padding: 20px;
-  }
-  
-  .portfolio-page h1 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .portfolio-page p {
-    font-size: 18px;
-    margin-bottom: 15px;
-    color: #555;
-  }
-  
-  .portfolio-stats {
+    box-sizing: border-box; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .portfolio-content {
+    max-width: 1200px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .portfolio-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-summary {
+    display: flex;
+    justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap; 
   }
   
   .portfolio-card {
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    padding: 20px;
+    flex: 1;
+    background-color:#ebf9f4;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
     text-align: center;
-    flex: 1 1 calc(30% - 20px);
-    max-width: 300px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   }
   
   .portfolio-card h3 {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    color: #333;
     margin-bottom: 10px;
   }
   
   .portfolio-card p {
     font-size: 16px;
-    margin: 5px 0;
+    color: #666;
+  }
+  
+  .portfolio-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-2px); 
+    transition: all 0.3s ease-in-out;
   }
   

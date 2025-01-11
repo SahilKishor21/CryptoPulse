@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import About from '../pages/About';
 import Market from '../pages/Market';
 import Portfolio from '../pages/Portfolio';
+import Performance from '../pages/Performance';
 import './Header.css';
 
 const Header = () => {
@@ -9,6 +10,8 @@ const Header = () => {
 
   const renderPage = () => {
     switch (activePage) {
+        case 'Performance':
+        return <Performance />;
       case 'market':
         return <Market />;
       case 'portfolio':
@@ -16,7 +19,7 @@ const Header = () => {
       case 'about':
         return <About />;
       default:
-        return <h1>Welcome to CryptoDashboard</h1>;
+        return ;
     }
   };
 
@@ -25,7 +28,7 @@ const Header = () => {
       <header className="header">
         <div className="container">
           <div className="logo">
-            <h1 onClick={() => setActivePage('home')}>CryptoDashboard</h1>
+            <h1 onClick={() => setActivePage('home')}>CryptoPulse</h1>
           </div>
           <nav className="nav">
             <button
@@ -39,6 +42,12 @@ const Header = () => {
               className={activePage === 'market' ? 'active' : ''}
             >
               Market
+            </button>
+            <button
+              onClick={() => setActivePage('Performance')}
+              className={activePage === 'market' ? 'active' : ''}
+            >
+             Performance
             </button>
             <button
               onClick={() => setActivePage('portfolio')}

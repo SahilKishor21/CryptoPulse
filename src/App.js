@@ -1,28 +1,38 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Market from './pages/Market';
 import Home from './pages/Home';
+import Performance from './pages/Performance';
+import SlidingHeader from './components/SlidingHeader'; 
 import './styles/App.css';
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState('home');
-
-  // Function to render the correct page
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'home':
-        return <Home />;
-      case 'about':
-      default:
-        return <Home />;
-    }
-  };
-
   return (
-    <div className="app">
-      <Header setCurrentPage={setCurrentPage} />
-      <main className="main-content container">{renderPage()}</main>
-      <Footer />
+    <div>
+      <Header />
+      <main className="main-content">
+        <section className="dashboard">
+          <h2>Crypto Dashboard</h2>
+          <Home />
+        </section>
+        <SlidingHeader />
+        <section className="sections-wrapper">
+          <div className="section-row" id="performance">
+            <Performance />
+          </div>
+          <div className="section-row" id="about">
+            <About />
+          </div>
+          <div className="section-row" id="portfolio">
+            <Portfolio />
+          </div>
+          <div className="section-row" id="market">
+            <Market />
+          </div>
+        </section>
+      </main>
     </div>
   );
 };

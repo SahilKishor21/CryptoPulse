@@ -3,27 +3,23 @@ import '../styles/Portfolio.css';
 
 const Portfolio = () => {
   return (
-    <div className="portfolio-page">
-      <h1>Your Portfolio</h1>
-      <p>
-        Track the performance of your cryptocurrency investments in real time. Analyze your portfolio growth and diversification.
-      </p>
-      <div className="portfolio-stats">
-        <div className="portfolio-card">
-          <h3>Total Value</h3>
-          <p>$100,000</p>
-        </div>
-        <div className="portfolio-card">
-          <h3>Bitcoin (BTC)</h3>
-          <p>50% - $50,000</p>
-        </div>
-        <div className="portfolio-card">
-          <h3>Ethereum (ETH)</h3>
-          <p>30% - $30,000</p>
-        </div>
-        <div className="portfolio-card">
-          <h3>Other</h3>
-          <p>20% - $20,000</p>
+    <div className="portfolio-section section-row">
+      <div className="portfolio-content">
+        <h2>Your Portfolio</h2>
+        <p>Track the value of your crypto assets in one place and get detailed insights into your holdings.</p>
+        <div className="portfolio-summary">
+          <div className="market-card">
+            <h3>Total Balance</h3>
+            <p>$45,678</p>
+          </div>
+          <div className="portfolio-card">
+            <h3>24h Profit/Loss</h3>
+            <p>+3.76%</p>
+          </div>
+          <div className="third-card">
+            <h3>Total Holdings</h3>
+            <p>5 BTC</p>
+          </div>
         </div>
       </div>
     </div>
