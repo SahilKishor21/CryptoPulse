@@ -1,0 +1,45 @@
+.market-page {
+    padding: 20px;
+  }
+  
+  .market-page h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .market-page p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .market-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .market-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(30% - 20px);
+    max-width: 300px;
+  }
+  
+  .market-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .market-card p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  

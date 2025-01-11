@@ -1,0 +1,87 @@
+/* General Header Styles */
+.header {
+    background-color: #1e1e2f; /* Dark theme background */
+    color: #ffffff;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo Styling */
+  .header .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #ffdd59; /* Highlighted logo color */
+    cursor: pointer;
+  }
+  
+  .header .logo h1:hover {
+    color: #ffc300; /* Slight hover effect */
+    transition: color 0.3s ease;
+  }
+  
+  /* Navigation Menu */
+  .header .nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .header .nav button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s ease;
+  }
+  
+  .header .nav button:hover {
+    background-color: #33334d; /* Hover background effect */
+    transform: scale(1.05); /* Slight scale effect */
+  }
+  
+  /* Active Link Styling */
+  .header .nav button.active {
+    background-color: #3a3a5e; /* Active button background */
+    border: 1px solid #ffffff;
+    font-weight: 600;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .header .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header .nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .header .logo h1 {
+      font-size: 20px;
+    }
+  
+    .header .nav button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  

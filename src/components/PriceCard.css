@@ -1,0 +1,68 @@
+.price-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .price-card h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .price-card p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 8px 0;
+    color: #555;
+  }
+  
+  .price-card .price {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1e90ff;
+  }
+  
+  .price-card .change {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+    color: #4caf50; /* Green for positive change */
+  }
+  
+  .price-card .change.negative {
+    color: #f44336; /* Red for negative change */
+  }
+  
+  .price-card .currency-switcher {
+    margin-top: 15px;
+  }
+  
+  .price-card .currency-switcher button {
+    background-color: #1e90ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .price-card .currency-switcher button:hover {
+    background-color: #0056b3;
+  }
+  
+  .price-card .currency-switcher button.active {
+    background-color: #0056b3;
+  }
+  
