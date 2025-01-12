@@ -1,79 +1,120 @@
-
 .performance-card {
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 100%;
-    max-width: 1335px;
-    font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 1350px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box; 
+  margin: 0 auto; 
+}
+
+.performance-card h2,
+.performance-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #333333;
+}
+
+.performance-bar {
+  position: relative;
+  height: 6px;
+  background-color: #e6e6e6;
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+.performance-bar-fill {
+  height: 100%;
+  background: linear-gradient(to right, #ff4e50, #6ee7b7);
+  border-radius: 3px;
+  width: 70%; 
+  position: relative;
+}
+
+.performance-bar-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%; 
+}
+
+.performance-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555555;
+  margin-top: 5px;
+}
+
+.fundamentals {
+  margin-top: 20px;
+}
+
+.fundamentals .fundamental-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.fundamentals .fundamental-item span {
+  font-size: 14px;
+  color: #666666;
+}
+
+.fundamentals .fundamental-item .label {
+  font-weight: 600;
+  color: #333333;
+}
+
+.fundamentals .fundamental-item .value {
+  color: #666666;
+}
+
+
+@media (max-width: 1200px) {
+  .performance-card {
+      max-width: 900px; 
   }
-  
- 
+}
+
+@media (max-width: 768px) {
+  .performance-card {
+      max-width: 100%;
+      padding: 15px; 
+  }
+
   .performance-card h2,
   .performance-card h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 16px;
-    color: #333333;
+      font-size: 16px; 
   }
-  
-  .performance-bar {
-    position: relative;
-    height: 6px;
-    background-color: #e6e6e6;
-    border-radius: 3px;
-    margin: 10px 0;
-  }
-  
-  .performance-bar-fill {
-    height: 100%;
-    background: linear-gradient(to right, #ff4e50, #6ee7b7);
-    border-radius: 3px;
-    width: 70%; 
-    position: relative;
-  }
-  
-  .performance-bar-indicator {
-    width: 10px;
-    height: 10px;
-    background-color: #000000;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    left: 50%; 
-  }
-  
-  .performance-labels {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    color: #555555;
-    margin-top: 5px;
-  }
-  
-  .fundamentals {
-    margin-top: 20px;
-  }
-  
-  .fundamentals .fundamental-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  
+
   .fundamentals .fundamental-item span {
-    font-size: 14px;
-    color: #666666;
+      font-size: 12px; 
   }
-  
-  .fundamentals .fundamental-item .label {
-    font-weight: 600;
-    color: #333333;
+
+  .performance-labels {
+      font-size: 12px; 
   }
-  
-  .fundamentals .fundamental-item .value {
-    color: #666666;
+}
+
+@media (max-width: 480px) {
+  .performance-card {
+      padding: 10px; 
   }
-  
+
+  .performance-bar {
+      height: 4px; 
+  }
+
+  .performance-bar-indicator {
+      width: 8px;
+      height: 8px; 
+  }
+}

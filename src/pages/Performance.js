@@ -3,7 +3,7 @@ import '../styles/Performance.css';
 
 const PerformanceCard = () => {
   return (
-    <div className="performance-card">
+    <div className="section-row performance-card">
       <h2>Performance</h2>
       <div>
         <div className="performance-labels">
