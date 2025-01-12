@@ -19,7 +19,7 @@ const App = () => {
         </section>
         <SlidingHeader />
         <section className="sections-wrapper">
-          <div className="section-row" id="about">
+          <div className="section-row" id="performance">
             <Performance />
           </div>
           <div className="section-row" id="about">
