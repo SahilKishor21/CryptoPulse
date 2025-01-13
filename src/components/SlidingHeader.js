@@ -11,6 +11,7 @@ const SlidingHeader = () => {
 
   return (
     <div className="sliding-header">
+      <div className="nav-item" onClick={() => scrollToSection('seasonals')}>Seasonals</div>
       <div className="nav-item" onClick={() => scrollToSection('performance')}>Performance</div>
       <div className="nav-item" onClick={() => scrollToSection('about')}>About</div>
       <div className="nav-item" onClick={() => scrollToSection('portfolio')}>Portfolio</div>

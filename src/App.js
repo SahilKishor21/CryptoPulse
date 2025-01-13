@@ -5,7 +5,8 @@ import Portfolio from './pages/Portfolio';
 import Market from './pages/Market';
 import Home from './pages/Home';
 import Performance from './pages/Performance';
-import SlidingHeader from './components/SlidingHeader'; 
+import SlidingHeader from './components/SlidingHeader';
+import SeasonalsCard from './pages/Seasonals'; 
 import './styles/App.css';
 
 const App = () => {
@@ -19,6 +20,9 @@ const App = () => {
         </section>
         <SlidingHeader />
         <section className="sections-wrapper">
+          <div className="section-row" id="seasonals">
+            <SeasonalsCard symbol="BTC/USD" />
+          </div>
           <div className="section-row" id="performance">
             <Performance />
           </div>

@@ -13,20 +13,22 @@
   }
   
   .trending-coins ul {
-    display: flex;
-    gap: 15px;
+    display: inline-flex;
+    gap: 30px;
   }
   
   .trending-coins li {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     text-align: center;
   }
   
   .trending-coins img {
     width: 40px;
     height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-bottom: 8px;
   }
   
