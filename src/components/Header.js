@@ -3,6 +3,7 @@ import About from '../pages/About';
 import Market from '../pages/Market';
 import Portfolio from '../pages/Portfolio';
 import Performance from '../pages/Performance';
+import Seasonals from '../pages/Seasonals';
 import './Header.css';
 
 const Header = () => {
@@ -10,6 +11,8 @@ const Header = () => {
 
   const renderPage = () => {
     switch (activePage) {
+        case 'Seasonals':
+          return <Seasonals />;
         case 'Performance':
         return <Performance />;
       case 'market':
@@ -37,6 +40,12 @@ const Header = () => {
             >
               Home
             </button>
+            <button
+              onClick={() => setActivePage('Seasonals')}
+              className={activePage === 'Seasonals' ? 'active' : ''}
+              >
+              Seasonals
+              </button>
             <button
               onClick={() => setActivePage('market')}
               className={activePage === 'market' ? 'active' : ''}

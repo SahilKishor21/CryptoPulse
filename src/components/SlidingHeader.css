@@ -1,26 +1,52 @@
 .sliding-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: transparent;
-    border-bottom: 1px solid #e6e6e6;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-item {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-item:hover {
+  color: #0073e6;
+  border-bottom: 2px solid #0073e6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sliding-header {
+      justify-content: space-between; /* Adjust spacing for smaller screens */
+      padding: 10px;
+      overflow-x: auto; /* Allow horizontal scrolling if needed */
+      white-space: nowrap; /* Prevent items from breaking into new lines */
   }
-  
+
   .nav-item {
-    font-size: 14px;
-    font-weight: 600;
-    color: #333333;
-    cursor: pointer;
-    padding: 8px 16px;
-    transition: color 0.3s, border-bottom 0.3s;
+      font-size: 12px; /* Reduce font size for mobile */
+      padding: 6px 12px; /* Adjust padding for smaller screens */
   }
-  
-  .nav-item:hover {
-    color: #0073e6;
-    border-bottom: 2px solid #0073e6;
+}
+
+@media (max-width: 480px) {
+  .sliding-header {
+      flex-wrap: wrap; /* Stack items if there's not enough space */
+      justify-content: center; /* Center-align items */
   }
-  
+
+  .nav-item {
+      font-size: 10px; /* Further reduce font size for very small screens */
+      padding: 4px 8px; /* Adjust padding */
+  }
+}
